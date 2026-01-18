@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Galeri Wahyu Ramadhani</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(180deg, #89A8B2, #F1F0E8);
+  color:#2b3a3f;
+}
+
+/* HEADER */
+header{
+  padding:30px;
+  text-align:center;
+  background:rgba(179,200,207,0.55); /* #B3C8CF */
+  backdrop-filter:blur(6px);
+}
+header h1{
+  margin:0;
+  font-size:32px;
+  letter-spacing:1px;
+  color:#2b3a3f;
+}
+header p{
+  color:#4b646d;
+  margin-top:8px;
+}
+
+/* GALERI GRID */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  padding:30px;
+}
+
+/* FOTO */
+.gallery img{
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(137,168,178,0.5);
+  transition:0.4s;
+}
+.gallery img:hover{
+  transform:scale(1.05);
+  box-shadow:0 20px 40px rgba(137,168,178,0.8);
+}
+
+/* BACK BUTTON */
+.back{
+  display:inline-block;
+  margin:25px auto 40px;
+  padding:12px 26px;
+  background:#89A8B2;
+  color:#ffffff;
+  text-decoration:none;
+  border-radius:30px;
+}
+.back:hover{
+  background:#6f8f99;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding-bottom:30px;
+  color:#5c7077;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌊 Galeri Tim</h1>
+  <p>Wahyu Ramadhani</p>
+</header>
+
+<section class="gallery">
+  <img src="img1.jpg">
+  <img src="img2.jpg">
+  <img src="img3.jpg">
+  <img src="img4.jpg">
+</section>
+
+<div style="text-align:center;">
+  <a href="../index.html" class="back">← Kembali</a>
+</div>
+
+<footer>
+  Alhamdulillah ✨
+</footer>
+
+</body>
+</html>
